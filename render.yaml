@@ -7,3 +7,4 @@ services:
         value: MyProject.settings
 
   workingDir: MyProject
+  preStartCommand: "ls -R"
