@@ -1,0 +1,398 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <style>
+    .bg-mycolor1
+    {
+        
+        background: #3D5AFE;
+    }
+    .bg-mycolor2
+    {
+        background: #E65100;
+    }
+    .text-color1
+    {
+        color:#00B0FF;
+    }
+    .text-color2
+    {
+        color: #1B5E20;
+    }
+    .slider
+    {
+        min-height: 550px;
+       
+    }
+    .imgslide
+    {
+        height: 550px;
+    }
+    .catimg
+    {
+        height: 90px;
+    }
+    .branchcard
+    {
+        transition: 2s;
+    }
+    .branchcard:hover
+    {
+        transform: scale(1.09);
+        transition: 2s;
+    }
+    .blogimg
+    {
+        height: 180px;
+    }
+        .imgdetails
+    {
+        height: 450px;
+    }
+    .s{
+        min-height: 200px;
+    }
+    .contact
+    {
+        min-height: 400px;
+    }
+    .bfooter
+    {
+        min-height: 50px;
+    }
+    .ufooter
+    {
+        min-height: 300px;
+    }
+    .servicecard
+    {
+       transition: 2s;
+    }
+    .servicecard:hover
+    {
+       transform: scale(1.1);
+       transition: 2s;
+    }
+    .gallery
+    {
+        min-height: 400px;
+    }
+    .team
+    {
+        min-height: 200px;
+    }
+    .imgteam
+    {
+        height: 300px;
+    }
+    .menutext
+    {
+        font-size: 25px;
+    }
+    .category
+    {
+        min-height: 200px;
+       
+    }
+    .caticon
+    {
+        height: 70px;
+        width: 70px;
+        border: 1px solid #ff3d00;
+        border-radius: 50%;
+        transition: 2s;
+         line-height: 70px;
+        text-align: center;
+        color: #ff3d00;
+    }
+    .caticon:hover
+    {
+
+        background: orangered;
+        color: white;
+        border-radius: 50%;
+        transition: 2s;
+       
+    }
+    .whyus
+    {
+        min-height: 300px;
+
+    }
+    #menu{
+        background: transparent !important;
+    }
+    #menu ul li a:hover{
+        color: white !important;
+        background: orangered;
+        transition: 2s;
+        border-radius: 10px 10px;
+    }
+    .whyic
+    {
+        height: 70px;
+        width: 70px;
+        font-size: 30px;
+        border: 1px solid #ff3d00;
+        border-radius: 10px;
+        padding: 15px;
+        color: #ff3d00;
+    }
+    .iccontact
+    {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        padding: 11px;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    .t
+    {
+        height: 50px;
+    }
+    .ta{
+       height: 120px;
+    }
+    .menu ul li a
+    {
+        color:white  !important;
+    }
+ </style>
+</head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="row-top py-3">
+            
+            <div class="col-sm-10  mx-auto">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="fs-3 fa-solid fa-graduation-cap"><b> राजकीय पॉलीटेक्निक  </b><b class="text-color1"> माधौगढ़ </b></div>
+                    </div>
+                    <div class="col-sm-2">
+                       <b class="fa-solid fa-phone-volume text-primary "></b><b> Call Us</b><br>
+                       8173871838
+                    </div>
+                    <div class="col-sm-2"><b class="fa-solid fa-envelope"> Mail Us</b><br>
+                        govt.polytechnic.madhgarh@gmail.com
+                    </div>
+                    <div class="col-sm-2 text-end">
+                        <a href="#" class="btn bg-mycolor1 rounded-pill fa-solid fa-address-book "> <b>contact us </b></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+            <!--start menu-->
+            <div class="row bg-mycolor1" style="min-height: 45px;">
+                <div class="col-sm-10 mx-auto  ">
+
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary " id="menu">
+  <div class="container-fluid">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mx-auto " id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto  mb-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="/home/"><b class=" fa-solid fa-house text-light"></b><b> Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/"><b class="fa-solid fa-circle-exclamation text-light rounded-pill bg-dark  "></b> <b>Principle Message</b></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/course/"><b class="fa-solid fa-list text-light"></b> <b> Courses </b></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/wchoose/">
+            <i class="fa-solid fa-laptop text-light"></i><b> Why choose us</b> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/facilities/">
+            <i class="fa-solid fa-list text-light"></i><b> facilities</b> </a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/team/">
+            <i class="fa-solid fa-people-group text-light"></i><b> Our Faculty</b></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/gallery/">
+            <i class="fa-solid fa-image text-light"></i><b> Gallery </b></a>
+        </li>
+         <li class="nav-item" >
+          <a class="nav-link" href="/contact/">
+            <i class="fa-solid fa-phone-volume text-light"></i><b> Contact Us </b></a>
+        </li>
+             <li class="nav-item" >
+          <a class="nav-link" href="/placement/">
+            <i class="fa-solid fa-computer text-light"></i><b> Our Placement </b></a>
+        </li>
+       <!-- Login Button -->
+<li class="nav-item">
+  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+    <i class="fa-solid fa-right-to-bracket text-light"></i> <b>Login</b>
+  </a>
+</li>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <form action="/home/" method="POST">
+          <!-- For Django CSRF token -->
+          {% csrf_token %}
+          
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+          
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+       
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+                </div>
+            </div>
+            <!--end menu-->
+            {% block content %}
+            
+            {% endblock %}
+
+           
+           
+
+
+           
+            
+            <!--start Category-->
+             <div class="row category py-4 ">
+
+                 <p class="fs-3 text-center">Our<b class="text-color2"> Faculty </b></p>
+                    <hr class="w-25 mx-auto">
+                    <div class="col-sm-10 mx-auto">
+                        <div class="row ">
+
+                             <!--start Category widget-->
+                            <div class="col-sm-3 text-center">
+                                <i class="fa-solid fa-user caticon  fs-1 mb-3"></i>
+                                <h3>100+</h3>
+                                <p>Placement Partner Company
+                                </p>
+                            </div>
+                            <!--start Category widget-->
+
+                              <!--start Category widget-->
+                            <div class="col-sm-3 text-center">
+                                <i class="fa-solid fa-user bg-light mb-3 caticon  fs-1 mb-3"></i>
+                                <h3>18,000+</h3>
+                                <p>Students taught so far
+                                </p>
+                            </div>
+                            <!--end Category widget-->
+                              <!--start Category widget-->
+                            <div class="col-sm-3 text-center">
+                                <i class="fa-solid fa-user caticon  fs-1 mb-3"></i>
+                                <h3>200+</h3>
+                                <p>
+                                    Total Placement
+                                </p>
+                            </div>
+                            <!--start Category widget-->
+                              <!--start Category widget-->
+                            <div class="col-sm-3 text-center">
+                                <i class="fa-solid fa-user caticon  fs-1 mb-3"></i>
+                                <h3>100%</h3>
+                                <p>Placement Assistant
+                                </p>
+                            </div>
+                            <!--start Category widget-->
+                        </div>
+                    </div>
+            </div>
+            <!--end Category-->
+
+                       <!--Start u footer-->
+            <div class="row  ufooter bg-dark">
+                <div class="col-sm-10">
+                    <div class="row">
+
+                        <div class="col-sm-3 text-light p-3">
+                    <h3>Contact Address</h3>
+                    <p class="fs-5 pt-2">Kailor,<br>
+                    Madhogarh,Jalaun, <br>
+                    Uttar Pradesh 285126</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9875151051,</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8173871838</p>
+                    <p class="fs-5 p-1"><i class=" fa-brands fa-facebook bg-primary rounded-5" ></i>
+                    <i class="fa-brands fa-whatsapp bg-success rounded-5" ></i>
+                    <i class="fa-brands fa-instagram bg-danger rounded-5" ></i>
+                    </p>    
+                </div>
+                <div class="col-sm-3 text-light " style="padding-top: 20px;">
+                  <a href="/home/">  <p class="menutext"><i class="fa-solid fa-arrow-right"> HOME</i></p> </a>
+                   <a href="/Login/"> <p class="menutext"><i class="fa-solid fa-arrow-right"> About Us</i></p> </a>
+                    <p class="menutext"><i class="fa-solid fa-arrow-right"> Services</i></p>
+                    <p class="menutext"><i class="fa-solid fa-arrow-right"> Gallery</i></p>
+                    <p class="menutext"><i class="fa-solid fa-arrow-right"> Category</i></p>    
+                </div>
+                <div class="col-sm-3 text-light menutext" style="padding-top: 20px;">
+                    <p><i class="fa-solid fa-arrow-right"> HOME</i></p>
+                    <p><i class="fa-solid fa-arrow-right"> About Us</i></p>
+                    <p><i class="fa-solid fa-arrow-right"> Services</i></p>
+                    <p><i class="fa-solid fa-arrow-right"> Gallery</i></p>
+                    <p><i class="fa-solid fa-arrow-right"> Category</i></p>  
+                </div>
+                <div class="col-sm-3 p-3 text-light">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                         elit. Doloribus omnis non eaque
+                         ea debitis officiis possimus
+                          voluptates doloremque neque ducimus, 
+                        eligendi corrupti exercitationem totam minus 
+                        beatae libero tenetur delectus consectetur.</p>
+                </div>
+                    </div>
+                </div>
+            </div>
+            <!--end u footer-->
+
+            <!--start b footer-->
+            <div class="row  bfooter bg-dark text-light text-center pt-3">
+                <span>Developed by Dipak Yagyik  &copy; <a href="http://www.techpile.in" target="_blank">Techpile Technology </a></span>
+            </div>
+            <!--end b footer-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>

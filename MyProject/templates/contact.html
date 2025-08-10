@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <!--start contact us-->
+            <div class="row contact us  py-4">
+                 <p class="fs-3 text-center">Contact<b class="text-mycolor2"> Us</b></p>
+                <center>
+                    <hr class="w-25 mx-auto">
+                </center>
+                <div class="col-sm-10 mx-auto">
+                     <div class="row">
+                        <div class="col-sm-7">
+                            <form method="post">
+                                {% csrf_token %}
+                          <input type="text" class="form-control t   mb-3 border-0 shadow-lg rounded-pill" placeholder="Name" name="name"> 
+                          <input type="email" class="form-control t  mb-3 border-0 shadow-lg rounded-pill" placeholder="Email" name="email"> 
+                          <input type="number" class="form-control t  mb-3 border-0 shadow-lg rounded-pill" placeholder="Mobile" name="mob"> 
+                          <textarea  class="form-control ta mb-3 border-0 shadow-lg" placeholder="Massage" name="msg"></textarea> 
+                          <input type="submit" value="Save" class="bg-mycolor1 text-light form-control rounded-pill t"> 
+                          </form>
+                          <!--
+                          {{x1}} <br>
+                          {{x2}} <br>
+                          {{x3}} <br>
+                          {{x4}} <br>
+                          -->
+                        </div>
+                        <div class="col-sm-5 bg-info text-dark p-3">
+                            <h4>Let's Get in touch</h4>
+                            <!--start contactus first-->
+                            <div class="row pt-2 ">
+                                <div class="col-1 ">
+                                    <i class="fa-solid fa-location-dot text-danger "></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="ps-4 fs-5">Kailor, Madhogarh, Jalaun, Uttar Pradesh 285126</p>
+                                </div>
+                            </div>
+                             <!--end contactus first-->
+                             <!--start contactus first-->
+                            <div class="row pt-2">
+                                <div class="col-1 ">
+                                    <i class="fa-solid fa-phone-volume text-danger"></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="ps-4"> 9875151051</p>
+                                </div>
+                            </div>
+                             <!--end contactus first-->
+                             <!--start contactus first-->
+                            <div class="row pt-2">
+                                <div class="col-1 ">
+                                    <i class="fa-solid fa-envelope text-danger "></i>
+                                </div>
+                                <div class="col-11">
+                                    <p class="ps-4"> govt.polytechnic.madhgarh@gmail.com</p>
+                                </div>
+                            </div>
+                             <!--end contactus first-->
+                             <!--start contactus first-->
+                            <div class="row pt-2">
+                                <div class="col-1 ">
+                                  
+                                    
+                                </div>
+                                <div class="col-11">
+                                    <h4 class="text-dark">FOLLOW US </h4>
+                                    <center>
+                                  <a href="https://www.facebook.com/share/1D9CiXYwXs/">   <i class="fa-brands fa-facebook bg-light rounded-pill fs-2  "></i></a> &nbsp; 
+                                   <a href="https://www.instagram.com/d_i_p_a_k____k_u_m_a_r____007?igsh=MWFlanV4OW01N2tobg==">  <i class="fa-brands fa-instagram text-danger rounded-pill fs-2" ></i> </a> &nbsp; 
+                                    <a href="https://www.whatsapp.com"> <i class="fa-brands fa-whatsapp bg-success  text-light rounded-pill fs-2 "></i> &nbsp; </a>
+                                    </center>
+                                   
+                                    <p class="ps-4"> </p>
+                                </div>
+                            </div>
+                             <!--end contactus first-->
+                        </div>
+                     </div>
+                </div>
+               
+            </div>
+            <!--end contact us-->
+
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+<!--start slider-->
+             <div class="row slider">
+                <div class="col-sm-4 pt-3">
+                    <!--Start Notification-->
+               
+                    <marquee behavior="alternate" direction="up" style="min-height: 400px;">
+                      {% for x in ndata %}
+                      <p class="bg-light shadow-lg my-2 p-3">
+                        <img src="{% static 'images/new4.gif' %}" height="40px">
+                        {{x.name}}
+                      </p>
+                      {% endfor %}
+                    </marquee>
+                    
+<!--End Notification-->
+                </div>
+                <div class="col-sm-8 p-0">
+                    <!--start carousel-->
+                    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/gpm1.jpg' %}" class="d-block w-100 img-fluid imgslide" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/2-min.jpg' %}" class="d-block w-100 img-fluid imgslide" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/gpm3.jpg' %}" class="d-block w-100 img-fluid imgslide" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                    <!--end carousel-->
+                </div>
+             </div>
+            <!--end slider-->
+
+            
+     <!--Start about-->
+            <div class="row about bg-light py-4 text-center " style="text-align:justify;">
+                <div class="col-sm-10 mx-auto">
+                    <p class="fs-3">About<b class="text-color2"> Us</b></p>
+                    <hr class="w-25 mx-auto">
+                    <b class="text-color1">About Home</b><br>
+                    Welcome to <b class="text-color2"> G.P.M. </b>, a digital gateway to your academic journey. Here, you can  
+                    explore all essential resources from course materials to exam notifications, from 
+                    campus news to upcoming events — all in one place. Designed for students, faculty, 
+                    and administrators, MyCollege bridges the gap between traditional learning and 
+                    modern campus management. Stay informed, stay connected, and experience 
+                    college life like never before with MyCollege — your companion in growth and 
+                    education. <br><br>
+                        <b class="text-color1">About page</b><br>
+                        MyCollege is a unified college management platform built with the vision to digitalize
+                         educational campuses. Whether it's keeping track of attendance, accessing study materials, or 
+                         communicating with faculty, our system makes everything seamless. Designed with security, accessibility,
+                          and user-friendliness in mind, MyCollege ensures that students focus more on learning and less on management hassles.
+                         It empowers teachers and students to interact in a structured and modern academic environment. <br><br>
+                        <b class="text-color1">About Academic</b><br>
+                       Our academic section offers a comprehensive view of courses, subjects,
+                        exam schedules, and performance tracking. Students can easily download syllabus
+                         files, watch lectures, or check internal marks in just a few clicks. Faculty can upload
+                         assignments, mark attendance, and update grades — all from one dashboard. MyCollege transforms 
+                       academic operations into a streamlined and paperless experience that fosters efficiency
+                        and transparency across departments. <br><br>
+                        
+                </div>
+            </div>
+            <!--end about-->
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal" style="display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.4);">
+  <div class="modal-content" style="max-width:400px;margin:10% auto;padding:20px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+    <span class="close" onclick="document.getElementById('loginModal').style.display='none'" style="float:right;font-size:28px;font-weight:bold;cursor:pointer">&times;</span>
+    <h2 style="text-align:center;">Login</h2>
+    <form method="POST" action="/login/">
+      {% csrf_token %}
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required style="width:100%;padding:8px;margin:8px 0;border-radius:4px;border:1px solid #ccc;">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required style="width:100%;padding:8px;margin:8px 0;border-radius:4px;border:1px solid #ccc;">
+      <button type="submit" style="width:100%;padding:10px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;">Login</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function showLoginModal() {
+  document.getElementById('loginModal').style.display = 'block';
+}
+</script>
+
+<!-- Login Button -->
+<!-- <button onclick="showLoginModal()" style="position:fixed;top:20px;right:20px;padding:10px 20px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;z-index:1000;">Login</button> -->
+<button onclick="showSignupModal()" style="position:fixed;top:60px;right:20px;padding:10px 20px;background:#28a745;color:#fff;border:none;border-radius:4px;cursor:pointer;z-index:1000;">Sign Up</button>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="modal" style="display:none;position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgba(0,0,0,0.4);">
+  <div class="modal-content" style="max-width:400px;margin:10% auto;padding:20px;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+    <span class="close" onclick="document.getElementById('signupModal').style.display='none'" style="float:right;font-size:28px;font-weight:bold;cursor:pointer">&times;</span>
+    <h2 style="text-align:center;">Sign Up</h2>
+    <form method="POST" action="/signup/">
+      {% csrf_token %}
+      <label for="signup_email">Email:</label>
+      <input type="email" id="signup_email" name="email" required style="width:100%;padding:8px;margin:8px 0;border-radius:4px;border:1px solid #ccc;">
+      <label for="signup_password">Password:</label>
+      <input type="password" id="signup_password" name="password" required style="width:100%;padding:8px;margin:8px 0;border-radius:4px;border:1px solid #ccc;">
+      <button type="submit" style="width:100%;padding:10px;background:#28a745;color:#fff;border:none;border-radius:4px;cursor:pointer;">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<script>
+function showSignupModal() {
+  document.getElementById('signupModal').style.display = 'block';
+}
+</script>
+{% endblock %}
